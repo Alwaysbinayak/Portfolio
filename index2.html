@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome cdn font icon css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style2.css">
 </head>
-<body style="background-color: #5a5757;">
-    <!-- NAVBAR START -->
-    <nav>
+<body background-image="url(1.jpg)">
+    <div class="hero-header">
         <div class="wrapper">
-            <div class="logo">
-                <div class="logo-text">Bk</div>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- NAVBAR END -->
-    <!-- HERO SECTION START -->
-    <div class="container">
-        <div class="profile-img">
-            <img src="./1220.jpg" alt="portfolio-image" height="200px" width="200px">
-        </div>
-        <div class="hero-text">
-            <div class="sub-text">
-                <p><span style="color: white;">Hi I'm</span> Frontend Developer</p>
-            </div>
-            <div class="header">
-                <h2>Binayak Panigrahi</h2>
-            </div>
-            <div class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem hic officia. Nihil, recusandae omnis quisquam commodi sequi vitae nam.
-            </div>
-            <div class="cta">
-                <button class="btn"><a href="./Highlight HTML.pdf" class="none"> Download CV</a></button>
-                <button class="btn" ><a href="tel:9178460953" class="none"> Contact</a></button>
-            </div>
-            <div class="social-links">
-                <i class="fa-brands fa-instagram social-icon"></i>
-                <i class="fa-brands fa-linkedin social-icon"></i>
-                <i class="fa-brands fa-facebook social-icon"></i>
-            </div>
-        </div>
-    </div>
+            <header>
+                <div class="logo">
+                   <i class="fa-solid fa-a"></i> 
+                    <div class="logo-text">Bk</div>
+                </div>
+                <nav>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./1220.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="">Frontend Developer</span></h5>
+                    <h1>Binayak Panigrahi</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eaque suscipit consectetur adipisci exercitationem reiciendis consequatur totam unde? Totam dolores aut dolor sapiente dicta possimus dolore, magni saepe unde earum?
 
-    <!-- HERO SECTION END -->
+                    </p>
+                    <div class="btn.group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+
+
+
+                    </div>
+                </div>
+            </div>
+       </div>
+     </div>
+     <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open")
+        })
+     </script>
 </body>
 </html>
